@@ -2,14 +2,16 @@
   "name": "like-automate",
   "version": "0.0.0",
   "dependencies": {
-  	"phantomjs": "",
-  	"phantom": "",
-  	"casperjs": "",
+    "casperjs": "",
     "handlebars": "",
-    "underscore": "",
+    "phantom": "",
+    "phantomjs": "",
+    "q": "",
     "restler": "",
-    "q": ""  	
-  	},
+    "selenium-webdriver": "^2.43.5",
+    "slimerjs": "",
+    "underscore": ""
+  },
   "engines": {
     "node": ">=0.8.0"
   }
