@@ -82,13 +82,18 @@ then(function(){
 
 			setTimeout(function() {
 				clearInterval(scrollInterval);
+				jQuery.post('http://localhost:3000/api/like_tracks.json',{like_track: {user_id: 2}})
 				console.log('getting unliked users count');
 				var unlikedUsersButtons = document.querySelectorAll('button.binary_rating_button.like:not(.liked)');
 				console.log(_.keys(users).length + ' users found');
 			}, (2000 * 4));
 		});
 	})
-});
+}).then(function(){
+	this.wait(2000 * 5, function() {
+	});
+})
+
 
 
 
